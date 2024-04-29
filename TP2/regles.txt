@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.3 -D 0.05 -U 1.0 -M 0.01 -S -1.0 -c -1
+Relation:     exportvue
+Instances:    532
+Attributes:   3
+              CATEGORIE_PRODUIT
+              PAYS
+              TRIMESTRE
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.01 (5 instances)
+Minimum metric <confidence>: 0.3
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 33
+
+Size of set of large itemsets L(2): 102
+
+Best rules found:
+
+ 1. PAYS=Pologne 13 ==> TRIMESTRE=Trimestre 1 7    <conf:(0.54)> lift:(1.99) lev:(0.01) [3] conv:(1.35)
+
+Si le pays est la Pologne, alors le trimestre est le premier trimestre 7 fois sur 13, avec une confiance de 54%. Cela indique une forte corrélation entre la Pologne et le premier trimestre.
+
+
+ 2. PAYS=Norv?ge 10 ==> TRIMESTRE=Trimestre 1 5    <conf:(0.5)> lift:(1.85) lev:(0) [2] conv:(1.22)
+
+Si le pays est la Norvège, alors le trimestre est le premier trimestre 5 fois sur 10, avec une confiance de 50%. Cela montre une corrélation modérée entre la Norvège et le premier trimestre.
+
+
+ 3. PAYS=Argentine 15 ==> TRIMESTRE=Trimestre 1 6    <conf:(0.4)> lift:(1.48) lev:(0) [1] conv:(1.09)
+
+Si le pays est l'Argentine, alors le trimestre est le premier trimestre 6 fois sur 15, avec une confiance de 40%. Il y a une corrélation modérée entre l'Argentine et le premier trimestre.
+
+ 4. PAYS=Argentine 15 ==> TRIMESTRE=Trimestre 2 6    <conf:(0.4)> lift:(1.44) lev:(0) [1] conv:(1.08)
+
+Si le pays est l'Argentine, alors le trimestre est le deuxième trimestre 6 fois sur 15, avec une confiance de 40%. Il y a une corrélation modérée entre l'Argentine et le deuxième trimestre.
+
+
+ 5. PAYS=Portugal 18 ==> TRIMESTRE=Trimestre 4 7    <conf:(0.39)> lift:(1.63) lev:(0.01) [2] conv:(1.14)
+
+Si le pays est le Portugal, alors le trimestre est le quatrième trimestre 7 fois sur 18, avec une confiance de 39%. Il y a une corrélation modérée entre le Portugal et le quatrième trimestre.
+
+
+ 6. PAYS=Belgique 20 ==> TRIMESTRE=Trimestre 1 7    <conf:(0.35)> lift:(1.29) lev:(0) [1] conv:(1.04)
+
+Si le pays est la Belgique, alors le trimestre est le premier trimestre 7 fois sur 20, avec une confiance de 35%. Il y a une corrélation modérée entre la Belgique et le premier trimestre.
+
+
+ 7. PAYS=Belgique 20 ==> TRIMESTRE=Trimestre 2 7    <conf:(0.35)> lift:(1.26) lev:(0) [1] conv:(1.03)
+
+Si le pays est la Belgique, alors le trimestre est le deuxième trimestre 7 fois sur 20, avec une confiance de 35%. Il y a une corrélation modérée entre la Belgique et le deuxième trimestre.
+
+
+ 8. PAYS=Portugal 18 ==> TRIMESTRE=Trimestre 2 6    <conf:(0.33)> lift:(1.2) lev:(0) [0] conv:(1)
+
+
+Si le pays est le Portugal, alors le trimestre est le deuxième trimestre 6 fois sur 18, avec une confiance de 33%. Il y a une corrélation modérée entre le Portugal et le deuxième trimestre.
+
+ 9. PAYS=Espagne 25 ==> TRIMESTRE=Trimestre 2 8    <conf:(0.32)> lift:(1.15) lev:(0) [1] conv:(1)
+
+
+Si le pays est l'Espagne, alors le trimestre est le deuxième trimestre 8 fois sur 25, avec une confiance de 32%. Il y a une corrélation modérée entre l'Espagne et le deuxième trimestre.
+
+
+10. PAYS=Finlande 25 ==> TRIMESTRE=Trimestre 1 8    <conf:(0.32)> lift:(1.18) lev:(0) [1] conv:(1.01)
+
+
+Si le pays est la Finlande, alors le trimestre est le premier trimestre 8 fois sur 25, avec une confiance de 32%. Il y a une corrélation modérée entre la Finlande et le premier trimestre.
+
